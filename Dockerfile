@@ -10,6 +10,7 @@ bind9-host \
 byobu \
 curl \
 iproute2 \
+less \
 mtr-tiny \
 netcat-openbsd \
 rsync \
@@ -22,4 +23,3 @@ wget \
 RUN     apt update && \
         apt install --no-install-recommends --autoremove --purge -y ${PKGS} && \
         apt upgrade -y
-
