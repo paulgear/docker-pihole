@@ -21,5 +21,7 @@ wget \
 "
 
 RUN     apt update && \
-        apt install --no-install-recommends --autoremove --purge -y ${PKGS} && \
-        apt upgrade -y
+        apt install --no-install-recommends -y ${PKGS} && \
+        apt upgrade --autoremove --purge -y
+
+# Don't remove the apt lists because this is intended to be long-running image which auto-upgrades.
