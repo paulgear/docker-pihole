@@ -1,6 +1,6 @@
 ARG     REGISTRY=
 ARG     BASE=pihole/pihole
-ARG     TAG=2024.07.0
+ARG     TAG=2026.10.1
 FROM    ${REGISTRY}${BASE}:${TAG}
 
 ENV     DEBIAN_FRONTEND=noninteractive
